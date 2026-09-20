@@ -1,0 +1,61 @@
+# Virtual environment & byte-cache
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Large datasets (raw images must not be pushed to GitHub)
+data/
+
+# PyTorch checkpoints (stored on Google Drive / Hugging Face)
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.ckpt
+checkpoints/archive/
+!checkpoints/README.md
+!checkpoints/optimal_ensemble_weights.json
+!checkpoints/.gitkeep
+
+# Archives & binaries
+*.zip
+*.tar.gz
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# Local reference files (kept locally, excluded from public repo)
+LINKEDIN_POST.txt
+MODEL_WEIGHTS_INFO.txt
+COMPREHENSIVE_EXPLANATION_GUIDE.*
+OVERALL_BENCHMARK_REPORT.*
+FINAL_SUBMISSION_CHECKLIST.txt
+SUBMISSION_GUIDE.*
+SUMMARY_REPORT.*
+00_README_DIRECTORY_GUIDE.txt
+
+# Local submission subfolders (only submission.csv, verify_submission.py, METHODOLOGY_SUMMARY.md are tracked in submission/)
+submission/1_OFFICIAL_SUBMISSION_FILES/
+submission/2_GOOGLE_DRIVE_WEIGHTS_UPLOAD/
+submission/3_LINKEDIN_POST/
+submission/4_METHODOLOGY_AND_BENCHMARK_REPORTS/
+submission/5_REPRODUCIBILITY_CODE/
+submission/*.txt
+submission/COMPREHENSIVE_EXPLANATION_GUIDE.*
+submission/OVERALL_BENCHMARK_REPORT.*
+submission/SUBMISSION_GUIDE.*
+submission/SUMMARY_REPORT.*
+submission/FINAL_SUBMISSION_CHECKLIST.*
+submission/MODEL_WEIGHTS_INFO.*
+submission/LINKEDIN_POST.*
+submission/README.md
+!submission/METHODOLOGY_SUMMARY.md
